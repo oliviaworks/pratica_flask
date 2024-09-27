@@ -34,5 +34,5 @@ jobs:
             echo "Conectando-se ao EC2"
             echo "${{ secrets.KEY_OLIVIA_EC2 }}" > private_key
             chmod 600 private_key
-            ssh -o StrictHostKeyChecking=no -i private_key ec2-35-173-247-90.compute-1.amazonaws.com "
+            ssh -o StrictHostKeyChecking=no -i private_key 3.215.246.216 "
                    cd pratica_flask/; git pull; ./executar.sh"
